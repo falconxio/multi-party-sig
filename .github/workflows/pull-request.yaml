@@ -15,7 +15,7 @@ jobs:
         run: |
           INCORRECTLY_FORMATTED_FILES=$(gofmt -l $GITHUB_WORKSPACE)
           if [ ${#INCORRECTLY_FORMATTED_FILES} -gt 0 ]; then
-            echo "Please run \`go fmt  .\..` and update the PR"
+            echo "Please run \`go fmt \` and update the PR"
             echo
             echo "incorrectly formatted files:"
             echo ${INCORRECTLY_FORMATTED_FILES//$GITHUB_WORKSPACE/} | tr ' ' '\n'
