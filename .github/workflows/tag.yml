@@ -5,6 +5,11 @@ on:
     tags:
       - 'v*.*.*'
 
+permissions:
+  contents: read
+  checks: write
+  actions: read
+
 jobs:
   test:
     runs-on: ubuntu-latest
