@@ -13,7 +13,7 @@ on:
 
   # Schedule the CI job (this method uses cron syntax):
   schedule:
-    - cron: '39 4 * * 4'
+    - cron: '40 22 * * 1'
     # It is recommended to change the schedule to a random time.
 
 permissions:
